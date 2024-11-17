@@ -19,7 +19,7 @@ app.use(express.json()); // For parsing incoming JSON payloads
 // Configure OpenAI
 const openai = new OpenAI(
     {
-        apiKey: process.env.OPENAI_API_KEY
+        apiKey: process.env.OPENAI_API_KEY // from .env 
     });
 
 // Endpoint to handle translation requests
