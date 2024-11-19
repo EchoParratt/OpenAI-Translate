@@ -9,7 +9,7 @@
       "skipLibCheck": true          // Skip type checks for node_modules
     },
     "include": ["server/**/*"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", "shared/**/*" ]
   }
   
   
