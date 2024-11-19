@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "ES6",              // Output modern JavaScript
+      "module": "ESNext",           // Use ES Modules
+      "outDir": "./dist/client",    // Output directory for compiled files
+      "rootDir": "./client",        // Root directory for source files
+      "strict": true,               // Enable strict type checking
+      "esModuleInterop": true,      // Compatibility with CommonJS modules
+      "skipLibCheck": true          // Skip type checking for node_modules
+    },
+    "include": ["client/**/*"],
+    "exclude": ["node_modules"]
+  }
+  
