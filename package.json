@@ -2,19 +2,22 @@
   "name": "openai-tr",
   "version": "1.0.0",
   "scripts": {
-    "build:client": "tsc --project tsconfig.client.json",
+    "build:client": "esbuild client/index.ts --bundle --outfile=dist/client/index.js --format=esm",
     "build:server": "tsc --project tsconfig.server.json",
     "build": "npm run build:client && npm run build:server",
     "start": "node dist/server/server.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "ldrs": "^1.0.2",
     "openai": "^4.0.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "esbuild": "^0.24.0",
     "typescript": "^5.2.2"
   }
 }
-
-

@@ -62,4 +62,40 @@ label {
     margin: 10px;
 }
 
+.hidden {
+    display: none;
+}
 
+
+.hidden {
+    display: none; /* Fallback for completely hiding elements */
+}
+
+ /* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-mask:linear-gradient(0deg,#000 55%,#0000 0) bottom/100% 18.18%;
+    position: fixed; /* Fixed positioning to keep it on the screen */
+    top: 45%; /* Center vertically */
+    right: 20%; /* Position it a bit away from the right edge */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    background:
+     linear-gradient(lightblue 0 0) bottom/100% 0% no-repeat
+     #ddd;
+    animation: l8 2s infinite steps(7);
+  }
+  @keyframes l8 {
+      100% {background-size:100% 115%}
+  }
+
+#translationContainer {
+    color: #333;
+    margin-top: 25px
+}
+
+#inputTextContainer {
+    color: lightblue;
+    margin-top: 25px;
+}
