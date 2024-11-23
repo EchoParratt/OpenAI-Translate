@@ -10,6 +10,7 @@ import express, {Request, Response} from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import {TranslationRequestBody, TranslationResponse} from '../shared/types.js'
+import github_icon from './assets/mark-github-24(1).png'
 
 // Server Setup
 const app = express();

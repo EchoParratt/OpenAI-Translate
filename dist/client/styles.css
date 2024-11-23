@@ -58,6 +58,11 @@ button:disabled {
     cursor: not-allowed; 
 }
 
+button:hover {
+    background-color: lightblue;
+
+}
+
 label {
     margin: 10px;
 }
@@ -98,4 +103,23 @@ label {
 #inputTextContainer {
     color: lightblue;
     margin-top: 25px;
+}
+
+
+#lang {
+    padding: 5px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 12px;
+  }
+
+  #githubLogo {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px;    /* Distance from the bottom edge of the screen */
+    left: 20px;      /* Distance from the left edge of the screen */
+    width: 50px;     /* Adjust size as needed */
+    height: auto;    /* Maintain aspect ratio */
+    z-index: 1000;   /* Ensure it appears above other elements */
+    cursor: pointer; /* Add a pointer cursor for interactivity */
 }
